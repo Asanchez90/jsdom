@@ -161,7 +161,7 @@ nameFilter$$.addEventListener('input', filtroNombre);
 
 const priceFilter$$ = document.querySelector('#priceFilter');
 
-select === 'All' ? pintarProductos(PORTATILES) : (priceFilter$$.value = ' ');
+select === 'All' ? pintarProductos(PORTATILES) : (priceFilter$$.value = '');
 pintarProductos(productosFiltradosNombre);
 
 const selectSearch = document.querySelector('#sellerFilter');
@@ -186,31 +186,33 @@ filterByPriceBtn.addEventListener('click', () => {
 
 // resetear filtros con el boton de "limpiar filtros"
 
-//REVISAR GILIPOLLAS
-const buttonclear$$ = document.querySelector('#cleanFiltersBtn');
-const imputPriceFilter = document.querySelector ('#priceBtn')
-
-// revisar aqui en adelante, proyecto canvas
-buttonClean.addEventListener ('click', () => {
-  nameFilter.value = nameFilter
-})
 
 
+// //REVISAR GILIPOLLAS
+// const buttonclear$$ = document.querySelector('#cleanFiltersBtn');
+// const imputPriceFilter$$ = document.querySelector ('#priceBtn')
 
-const cleanFiltersBtn$$ = document.querySelector('#cleanFiltersBtn');
-cleanFiltersBtn$$.addEventListener('click', () => {
-  resetFilters();
-  console.log('click 191');
-});
-console.log('click 193');
+// // revisar aqui en adelante, proyecto canvas
+// buttonclear$$.addEventListener ('click', () => {
+//   nameFilter$$.value = nameFilter$$
+// })
 
-const resetFilters = () => {
-  const selectSearch = document.querySelector('#sellerFilter');
-  selectSearch.value = selectSearch.options[0].value;
-  console.log('click 198');
-  const priceFilter = document.querySelector('#priceFilter');
-  priceFilter.value = '';
 
-  pintarProductos(PORTATILES);
-};
-console.log("click 204")
+
+// const cleanFiltersBtn$$ = document.querySelector('#cleanFiltersBtn');
+// cleanFiltersBtn$$.addEventListener('click', () => {
+//   resetFilters();
+//   console.log('click 191');
+// });
+// console.log('click 193');
+
+// const resetFilters = () => {
+//   const selectSearch = document.querySelector('#sellerFilter');
+//   selectSearch.value = selectSearch.options[0].value;
+//   console.log('click 198');
+//   const priceFilter = document.querySelector('#priceFilter');
+//   priceFilter.value = '';
+
+//   pintarProductos(PORTATILES);
+// };
+// console.log("click 204")
