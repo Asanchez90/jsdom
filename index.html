@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Alejandro90">
+  <meta name="description" content="Tienda js-dom">
+  <link rel="stylesheet" href="./style.css">
+
+  <title>Tu tienda de PC</title>
+</head>
+<header id="general-header">
+
+</header>
+
+<body>
+  <section class="filters">
+    <select class="sellerFilter">
+      <option value="All">Todos las marcas</option>
+      <option value="Apple">Apple</option>
+      <option value="ASUS">ASUS</option>
+      <option value="MSI">MSI</option>
+      <option value="Lenovo">Lenovo</option>
+    </select>
+    
+    <input type="text" id="nameFilter" placeholder="marca" />
+    <input type="number" id="priceFilter" placeholder="Precio" />
+    <button id="priceBtn">Buscar por precio</button>
+    <button id="cleanFiltersBtn">Limpiar filtros</button>
+  </section>
+
+  <div id="main-container">
+    <h1 class="Titulo-main">
+      Todos los portatiles 
+    </h1>
+  </div>
+  <div id="productos">
+
+  </div>
+  
+  
+  <!-- <script>
+      alert('Todos los ordenadores tienen la posibilidad de darte un chuchaso!');
+    </script> -->
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
