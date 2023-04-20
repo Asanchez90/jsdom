@@ -159,34 +159,47 @@ nameFilter$$.addEventListener('input', filtroNombre);
 // filtro precio ----> input escrito
 //REVISAR FILTRO PORQUE NO ME CUADRA
 
-const priceFilter$$ = document.querySelector('#priceFilter');
+// const filterProductos = (PORTATILES, select) => {
+//   console.log(producto, select);
 
-select === 'All' ? pintarProductos(PORTATILES) : (priceFilter$$.value = '');
-pintarProductos(productosFiltradosNombre);
+//   if (select === 'All') {
+//     pintarProductos(PORTATILES);
+//     return;
+//   }
+//   const producto = producto.filter(
+//     (producto) => producto.seller === select
+//   );
 
-const selectSearch = document.querySelector('#sellerFilter');
-selectSearch.addEventListener('change', (ev) =>
-  filterPortatiles(PORTATILES, ev.target.value)
-);
+//   console.log(filterProductos);
+//   const priceFilter$$ = document.querySelector('#priceFilter');
+  
+//   select === 'All' ? pintarProductos(PORTATILES) : (priceFilter$$.value = '');
+//   pintarProductos(PORTATILES); 
+// };
 
-const filterProductsByPrice = (productos, maxPrice) => {
-  const priceFilter$$ = productos.filter(
-    (productos) => productos.price <= maxPrice
-  );
-};
+// const selectSearch = document.querySelector('.sellerFilter');
+// selectSearch.addEventListener('change', (ev) =>
+// pintarProductos(PORTATILES, ev.target.value)
+// );
+
+
+// //aqui está el fallo
+// const filterProductsByPrice = (productos, maxPrice) => {
+//   const productosFiltradosNombre = productos.filter(
+//     (productos) => productos.price <= maxPrice
+//   );
+// };
 
 // boton filtrar productos por marca ----> es el boton...
-const filterByPriceBtn = document.querySelector('#priceBtn');
-filterByPriceBtn.addEventListener('click', () => {
-  const priceFilter$$ = document.querySelector('#priceFilter');
-  const maxPrice = priceFilter$$.value;
+// const filterByPriceBtn = document.querySelector('#priceBtn');
+// filterByPriceBtn.addEventListener('click', () => {
+//   const priceFilter$$ = document.querySelector('#priceFilter');
+//   const maxPrice = priceFilter$$.value;
 
-  filterSneakersByPrice(sneakers, maxPrice);
-});
+//   filterSneakersByPrice(sneakers, maxPrice);
+// });
 
 // resetear filtros con el boton de "limpiar filtros"
-
-
 
 // //REVISAR GILIPOLLAS
 // const buttonclear$$ = document.querySelector('#cleanFiltersBtn');
@@ -196,8 +209,6 @@ filterByPriceBtn.addEventListener('click', () => {
 // buttonclear$$.addEventListener ('click', () => {
 //   nameFilter$$.value = nameFilter$$
 // })
-
-
 
 // const cleanFiltersBtn$$ = document.querySelector('#cleanFiltersBtn');
 // cleanFiltersBtn$$.addEventListener('click', () => {
