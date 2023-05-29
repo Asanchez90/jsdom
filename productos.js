@@ -6,17 +6,17 @@ export const PORTATILES = [
       price: 1199,
       stars: 5,
       reviews: 2950,
-      seller: 'Apple',
-      image: './public/mac-m2.png',
+      seller: 'APPLE',
+      image: 'https://res.cloudinary.com/dcs7ntcz7/image/upload/v1685363098/Tienda-web/mac-m2_qrirqc.png',
     },
     {
       name: 'MacBook Pro 14" chip M2 Pro or M2 Max chip',
       so: 'ios',
-      price: 1.999,
+      price: 1999,
       stars: 4,
       reviews: 3435,
-      seller: 'Apple',
-      image: './public/macpro.png',
+      seller: 'APPLE',
+      image: 'https://res.cloudinary.com/dcs7ntcz7/image/upload/v1685363098/Tienda-web/macpro_rylxo1.png',
     },
     {
       name: 'Acer Aspire 3 A315-43-R4VC AMD Ryzen 5 5500U/8GB/512GB SSD/15.6"',
@@ -24,9 +24,9 @@ export const PORTATILES = [
       price: 499,
       stars: 4,
       reviews: 250,
-      seller: 'Acer',
+      seller: 'ACER',
       image:
-        './public/acer-aspire-3.png',
+        'https://res.cloudinary.com/dcs7ntcz7/image/upload/v1685363097/Tienda-web/acer-aspire-3_cg7xw7.png',
     },
     {
       name: 'HP Victus 16-d1033ns Intel Core i7-12700H/16GB/512GB SSD/RTX 3060/16.1"',
@@ -36,7 +36,7 @@ export const PORTATILES = [
       reviews: 2526,
       seller: 'HP',
       image:
-        './public/hp-victus-16-d1033ns-intel-core-i7-12700.png',
+        'https://res.cloudinary.com/dcs7ntcz7/image/upload/v1685363097/Tienda-web/hp-victus-16-d1033ns-intel-core-i7-12700_zlq3xt.png',
     },
     {
       name: 'ASUS Chromebook CX1400CNA-EK0225 Intel Celeron N3350/8GB/32GB eMMC/14"',
@@ -44,9 +44,9 @@ export const PORTATILES = [
       price: 289,
       stars: 4,
       reviews: 125,
-      seller: 'Asus',
+      seller: 'ASUS',
       image:
-        './public/asus-chromebook-cx1400.png',
+        'https://res.cloudinary.com/dcs7ntcz7/image/upload/v1685363097/Tienda-web/asus-chromebook-cx1400_fhbs0d.png',
     },
     {
       name: 'Acer Predator Helios 300 PH315-54 Intel Core i7-11800H/32GB/1TB SSD/RTX 3060/15.6"',
@@ -54,9 +54,9 @@ export const PORTATILES = [
       price: 1299.99,
       stars: 4,
       reviews: 250,
-      seller: 'Acer',
+      seller: 'ACER',
       image:
-        './public/acer-predator-helios-300-intel-core-i7-11800.png',
+        'https://res.cloudinary.com/dcs7ntcz7/image/upload/v1685363097/Tienda-web/acer-predator-helios-300-intel-core-i7-11800_mpvgsr.png',
     },
     {
       name: 'MSI Katana 15 B12VFK-095XES Intel Core i7-12650H/16GB/512GB SSD/RTX 4060/15.6"',
@@ -64,7 +64,7 @@ export const PORTATILES = [
       price: 1369.99,
       stars: 4,
       reviews: 200,
-      seller: 'Msi',
+      seller: 'MSI',
       image:
         './public/msi-katana-intel-core-i7-12650.png',
     },
@@ -74,9 +74,9 @@ export const PORTATILES = [
       price: 1699.01,
       stars: 4,
       reviews: 125,
-      seller: 'msi',
+      seller: 'MSI',
       image:
-        './public/msi-crosshair-17-i7-12650.png',
+        'https://res.cloudinary.com/dcs7ntcz7/image/upload/v1685363099/Tienda-web/msi-katana-intel-core-i7-12650_irlm4s.png',
     },
     {
       name: 'HP Omen 16-b1022ns Intel Core i7-12700H/32GB/1TB SSD/RTX 3060/16.1"',
@@ -86,7 +86,7 @@ export const PORTATILES = [
       reviews: 435,
       seller: 'HP',
       image:
-        './public/hp-omen-16-i7-12700.png',
+        'https://res.cloudinary.com/dcs7ntcz7/image/upload/v1685363097/Tienda-web/hp-omen-16-i7-12700_tjk2zk.png',
     },
     {
       name: 'Lenovo Legion 5 15IAH7H Intel Core i7-12700H/16GB/512GB SSD/RTX3060/15.6"',
@@ -94,9 +94,9 @@ export const PORTATILES = [
       so: 'w11',
       stars: 4,
       reviews: 667,
-      seller: 'Lenovo',
+      seller: 'LENOVO',
       image:
-        './public/Lenovo-legion-5-15iah7h-i7-12700.png',
+        'https://res.cloudinary.com/dcs7ntcz7/image/upload/v1685363097/Tienda-web/Lenovo-legion-5-15iah7h-i7-12700_rrbbeo.png',
     },
   ];
   
