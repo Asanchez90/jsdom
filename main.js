@@ -5,7 +5,7 @@ const PORTATILES = [
   {
     name: 'MacBook Air chip M2',
     so: 'ios',
-    price: 1199,
+    price: '1199',
     stars: 5,
     reviews: 2950,
     seller: 'Apple',
@@ -26,7 +26,7 @@ const PORTATILES = [
     price: 499,
     stars: 4,
     reviews: 250,
-    seller: 'Acer',
+    seller: 'ACER',
     image: './public/acer-aspire-3.png',
   },
   {
@@ -44,7 +44,7 @@ const PORTATILES = [
     price: 289,
     stars: 4,
     reviews: 125,
-    seller: 'Asus',
+    seller: 'ASUS',
     image: './public/asus-chromebook-cx1400.png',
   },
   {
@@ -62,7 +62,7 @@ const PORTATILES = [
     price: 1369.99,
     stars: 4,
     reviews: 200,
-    seller: 'Msi',
+    seller: 'MSI',
     image: './public/msi-katana-intel-core-i7-12650.png',
   },
   {
@@ -71,7 +71,7 @@ const PORTATILES = [
     price: 1699.01,
     stars: 4,
     reviews: 125,
-    seller: 'msi',
+    seller: 'MSI',
     image: './public/msi-crosshair-17-i7-12650.png',
   },
   {
@@ -89,7 +89,7 @@ const PORTATILES = [
     so: 'w11',
     stars: 4,
     reviews: 667,
-    seller: 'Lenovo',
+    seller: 'LENOVO',
     image: './public/Lenovo-legion-5-15iah7h-i7-12700.png',
   },
 ];
@@ -156,36 +156,62 @@ const nameFilter$$ = document.querySelector('#nameFilter');
 
 nameFilter$$.addEventListener('input', filtroNombre);
 
-// filtro precio ----> input escrito
-//REVISAR FILTRO PORQUE NO ME CUADRA
+// FILTRO SELECT PORQUE NO ME CUADRA
+
+const filterPORTATILES = (PORTATILES, select) => {
+  // console.log(PORTATILES, select);
+
+  if (select === 'All') {
+    // pintarProductos(PORTATILES);
+    return pintarProductos(PORTATILES);
+  }
+  const filterPORTATILES = PORTATILES.filter(
+    (productos) => productos.seller === select
+  );
+
+  const priceFilter = document.querySelector('#priceFilter');
+
+  select === 'All'
+    ? pintarProductos(PORTATILES)
+    : (priceFilter.value = '');
+  pintarProductos(filterPORTATILES);
+};
+
+const selectSearch = document.querySelector("#sellerFilter");
+selectSearch.addEventListener("change", (ev) =>
+filterPORTATILES(PORTATILES, ev.target.value)
+);
 
 // const filterProductos = (PORTATILES, select) => {
-//   console.log(producto, select);
+//   console.log(PORTATILES, select);
 
 //   if (select === 'All') {
-//     pintarProductos(PORTATILES);
-//     return;
+//     // pintarProductos(PORTATILES);
+//     return pintarProductos(PORTATILES.seller);
 //   }
 //   const producto = producto.filter(
 //     (producto) => producto.seller === select
 //   );
+// };
 
+//esto de abajo revisar
 //   console.log(filterProductos);
 //   const priceFilter$$ = document.querySelector('#priceFilter');
-  
+
 //   select === 'All' ? pintarProductos(PORTATILES) : (priceFilter$$.value = '');
-//   pintarProductos(PORTATILES); 
-// };
+//   pintarProductos(PORTATILES);
 
 // const selectSearch = document.querySelector('.sellerFilter');
 // selectSearch.addEventListener('change', (ev) =>
 // pintarProductos(PORTATILES, ev.target.value)
 // );
 
+// filtro precio ----> input escrito
+//aqui está el fallo
 
-// //aqui está el fallo
+// aplicar map
 // const filterProductsByPrice = (productos, maxPrice) => {
-//   const productosFiltradosNombre = productos.filter(
+//   const productosFiltradosPrecio = productos.filter(
 //     (productos) => productos.price <= maxPrice
 //   );
 // };
@@ -195,9 +221,22 @@ nameFilter$$.addEventListener('input', filtroNombre);
 // filterByPriceBtn.addEventListener('click', () => {
 //   const priceFilter$$ = document.querySelector('#priceFilter');
 //   const maxPrice = priceFilter$$.value;
-
-//   filterSneakersByPrice(sneakers, maxPrice);
+//   console.log(`${priceFilter$$}`);
+//   filterProductsByPrice(productos, maxPrice);
 // });
+
+// filterProductsByPrice(productos,maxPrice);
+
+// const priceFilters$$ = () = {
+//   const priceFilter$$ = document. querySelector("productos");
+//   buscador$$.addEventListener("input", filtrarEstrellas)
+// }
+//   const filtrarEstrellas = (e) =› {
+//   • console. log(typeof parseint (e.target.value) I;
+//   const proyectsFiltered = PROYECTS.filter((proyect) - proyect.estrellas - parseInt(e. target. value));
+//   console.log(proyectsFiltered);
+//   initProvects(provectsFiltered)
+//   }
 
 // resetear filtros con el boton de "limpiar filtros"
 
@@ -227,3 +266,11 @@ nameFilter$$.addEventListener('input', filtroNombre);
 //   pintarProductos(PORTATILES);
 // };
 // console.log("click 204")
+
+const onButtonClicked = () => {
+  // alert(`El input tiene como valor: ${inputValue}`);
+  console.log('Button clicked!');
+};
+
+const buttonElement = document.querySelector('#priceBtn');
+buttonElement.addEventListener('click', onButtonClicked);
