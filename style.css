@@ -23,6 +23,10 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  text-decoration: none;
+  /* border: none; */
+  /* outline: none; */
+  box-sizing: border-box;
 }
 
 body {
@@ -36,17 +40,24 @@ body {
 /* header */
 #general-header {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; 
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  padding: 1rem;
+  padding: 1rem; */
   list-style: none;
 }
 
 #general-header > ul > li {
   list-style: none;
 }
+
+.nav-header {
+  display: flex;
+  flex-direction: row;
+  
+}
+
 /* debajo del header */
 
 .filters {

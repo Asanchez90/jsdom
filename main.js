@@ -207,85 +207,34 @@ filterByPriceBtn.addEventListener("click", () => {
   const minPrice = priceFilter.value;
 
   // filtroPortatilesPorPrecio(PORTATILES, maxPrice);
-  filtroPortatilesPorPrecio(PORTATILES,maxPrice );
+  filtroPortatilesPorPrecio(PORTATILES,maxPrice);
 });
 
-
-
-
-
-
-
-
-
-
-
-
-// filtro precio ----> input escrito
-//aqui está el fallo
-
-// aplicar map
-// const filterProductsByPrice = (productos, maxPrice) => {
-//   const productosFiltradosPrecio = productos.filter(
-//     (productos) => productos.price <= maxPrice
-//   );
-// };
-
-// boton filtrar productos por marca ----> es el boton...
-// const filterByPriceBtn = document.querySelector('#priceBtn');
-// filterByPriceBtn.addEventListener('click', () => {
-//   const priceFilter$$ = document.querySelector('#priceFilter');
-//   const maxPrice = priceFilter$$.value;
-//   console.log(`${priceFilter$$}`);
-//   filterProductsByPrice(productos, maxPrice);
-// });
-
-// filterProductsByPrice(productos,maxPrice);
-
-// const priceFilters$$ = () = {
-//   const priceFilter$$ = document. querySelector("productos");
-//   buscador$$.addEventListener("input", filtrarEstrellas)
-// }
-//   const filtrarEstrellas = (e) =› {
-//   • console. log(typeof parseint (e.target.value) I;
-//   const proyectsFiltered = PROYECTS.filter((proyect) - proyect.estrellas - parseInt(e. target. value));
-//   console.log(proyectsFiltered);
-//   initProvects(provectsFiltered)
-//   }
 
 // resetear filtros con el boton de "limpiar filtros"
 
 // //REVISAR GILIPOLLAS
-// const buttonclear$$ = document.querySelector('#cleanFiltersBtn');
-// const imputPriceFilter$$ = document.querySelector ('#priceBtn')
+const cleanFiltersBtn = document.querySelector("#cleanFiltersBtn");
+cleanFiltersBtn.addEventListener("click", () => {
+  resetFilters();
+});
 
-// // revisar aqui en adelante, proyecto canvas
-// buttonclear$$.addEventListener ('click', () => {
-//   nameFilter$$.value = nameFilter$$
-// })
+const resetFilters = () => {
+  const selectSearch = document.querySelector("#sellerFilter");
+  selectSearch.value = selectSearch.options[0].value;
 
-// const cleanFiltersBtn$$ = document.querySelector('#cleanFiltersBtn');
-// cleanFiltersBtn$$.addEventListener('click', () => {
-//   resetFilters();
-//   console.log('click 191');
-// });
-// console.log('click 193');
+  const priceFilter = document.querySelector("#priceFilter");
+  priceFilter.value = "";
 
-// const resetFilters = () => {
-//   const selectSearch = document.querySelector('#sellerFilter');
-//   selectSearch.value = selectSearch.options[0].value;
-//   console.log('click 198');
-//   const priceFilter = document.querySelector('#priceFilter');
-//   priceFilter.value = '';
-
-//   pintarProductos(PORTATILES);
-// };
-// console.log("click 204")
-
-const onButtonClicked = () => {
-  // alert(`El input tiene como valor: ${inputValue}`);
-  console.log('Button clicked!');
+  pintarProductos(PORTATILES);
 };
 
-const buttonElement = document.querySelector('#priceBtn');
-buttonElement.addEventListener('click', onButtonClicked);
+
+
+// const onButtonClicked = () => {
+//   // alert(`El input tiene como valor: ${inputValue}`);
+//   console.log('Button clicked!');
+// };
+
+// const buttonElement = document.querySelector('#cleanFiltersBtn');
+// buttonElement.addEventListener('click', onButtonClicked);
