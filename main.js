@@ -207,9 +207,9 @@ filterByPriceBtn.addEventListener("click", () => {
   const priceFilter = document.querySelector("#priceFilter");
   const maxPrice = priceFilter.value;
 
-  if (maxPrice === ""|| maxPrice <= 289 || maxPrice > 5000) {
+  if (maxPrice === ""|| maxPrice <= 287 || maxPrice > 5000) {
     const errorText = document.querySelector("#errorText");
-    errorText.textContent = alert ("Debes insertar una cantidad");
+    errorText.textContent = alert ("Lo sentimos, pero en estos momentos no tenemos productos con esos precios.");
    
     return; 
 
