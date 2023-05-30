@@ -193,6 +193,7 @@ button {
   gap: 16px;
   margin: 16px;
   padding: 10px;
+  cursor: pointer;
 
 }
 
