@@ -41,8 +41,7 @@ body {
 /* navbar hamburguer  */
 
 .navbar {
-  font-size: 32px;
-  
+  font-size: 26px;
   margin: 16px;
   gap: 16px;
   display: flex;
@@ -217,7 +216,7 @@ button {
     
   }
   .nav-links {
-    font-size: 16px;
+    font-size: 12px;
     
   }
 
