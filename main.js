@@ -207,11 +207,14 @@ filterByPriceBtn.addEventListener("click", () => {
   const priceFilter = document.querySelector("#priceFilter");
   const maxPrice = priceFilter.value;
 
-  if (maxPrice === "" ) {
+  if (maxPrice === ""|| maxPrice <= 289 || maxPrice > 5000) {
     const errorText = document.querySelector("#errorText");
     errorText.textContent = alert ("Debes insertar una cantidad");
    
     return; 
+
+
+
   // } else {
   //   (maxPrice < 6000) 
   //     const errorText = document.querySelector("#errorText");
@@ -250,7 +253,7 @@ const resetFilters = () => {
 
 
 // const onButtonClicked = () => {
-//   // alert(`El input tiene como valor: ${inputValue}`);
+//  
 //   console.log('Button clicked!');
 // };
 
