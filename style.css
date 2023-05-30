@@ -38,29 +38,65 @@ body {
   background-image: url('https://www.transparenttextures.com/patterns/diagmonds.png');
 }
 /* header */
-#general-header {
-  display: flex;
-  /* flex-direction: row; 
-  justify-content: space-between;
-  align-items: center;
-  gap: 2rem;
-  padding: 1rem; */
-  list-style: none;
-}
+/* navbar hamburguer  */
 
-#general-header > ul > li {
-  list-style: none;
-}
-
-.nav-header {
+.navbar {
+  font-size: 32px;
+  
+  margin: 16px;
+  gap: 16px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   
 }
 
+.main-nav {
+  list-style-type: none;
+  display: none;
+  
+  justify-content: space-evenly;
+}
+
+.nav-links,
+.logo {
+  text-decoration: none;
+  color: white;
+  font-size: 32px;
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+  font-size: 32px;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 1.8em;
+  margin: 20px 0 0 20px;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 1.8em;
+}
+
+#chkToggle {
+  display: none;
+}
+
+#chkToggle:checked + ul.main-nav {
+  display: block;
+}
+
+
+
 /* debajo del header */
 
-.filters {
+.filters, .infoRedes {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -71,13 +107,13 @@ body {
   padding: 1rem;
   border-bottom: 2px solid black;
 }
-/* revisar */
+
 
 #priceFilter,
 #nameFilter,
 #priceBtn,
 #cleanFiltersBtn,
-.sellerFilter {
+.sellerFilter, .infoRedes{
   font-size: medium;
   border-radius: 10px;
   border-color: black;
@@ -119,8 +155,6 @@ button {
 .producto:hover {
   cursor: pointer;
   transform: scale(1.1);
-  /* background-color:#fabada; */
-  /* background-color: rgb(207, 206, 206); */
   transition: ease-in 1s;
   color: whitesmoke;
 }
@@ -146,3 +180,61 @@ button {
   justify-content: center;
   margin-top: 16px;
 }
+
+/* ----footer---- */
+.footer-redes {
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 16px;
+  margin: 16px;
+  padding: 10px;
+
+}
+
+@media screen and (min-width: 620px) {
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+  
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  #chkToggle:checked + ul.main-nav {
+    display: flex;
+    
+  }
+
+  .main-nav li {
+    margin: 0;
+    nav-left: 40px;
+    align-items: center;
+    
+  }
+  .nav-links {
+    font-size: 16px;
+    
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  .navbar-toggle {
+    display: none;
+    
+  }
+}
+
+
+
+/* Dispositivos tablet */
+/* @media (min-width: 768px) {} */
+
+/* Escritorio */
+/* @media (min-width: 768px) {} */

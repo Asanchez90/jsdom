@@ -182,11 +182,11 @@ selectSearch.addEventListener('change', (ev) =>
   filterPORTATILES(PORTATILES, ev.target.value)
 );
 
-// filtro precio ----> input escrito
+// filtro precio ----> input escrito 
+// calcular el rango de precio minimo y precio maximo
 
 
-
-const filtroPortatilesPorPrecio = (PORTATILES, maxPrice, minPrice) => {
+const filtroPortatilesPorPrecio = (PORTATILES, maxPrice) => {
   const filterPORTATILES = PORTATILES.filter(
     (productos) =>  productos.price <= maxPrice 
   );
@@ -204,7 +204,7 @@ const filterByPriceBtn = document.querySelector("#priceBtn");
 filterByPriceBtn.addEventListener("click", () => {
   const priceFilter = document.querySelector("#priceFilter");
   const maxPrice = priceFilter.value;
-  const minPrice = priceFilter.value;
+  
 
   // filtroPortatilesPorPrecio(PORTATILES, maxPrice);
   filtroPortatilesPorPrecio(PORTATILES,maxPrice);
@@ -213,7 +213,7 @@ filterByPriceBtn.addEventListener("click", () => {
 
 // resetear filtros con el boton de "limpiar filtros"
 
-// //REVISAR GILIPOLLAS
+
 const cleanFiltersBtn = document.querySelector("#cleanFiltersBtn");
 cleanFiltersBtn.addEventListener("click", () => {
   resetFilters();

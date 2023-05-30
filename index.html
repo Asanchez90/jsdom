@@ -7,22 +7,36 @@
   <meta name="author" content="Alejandro90">
   <meta name="description" content="Tienda js-dom">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./btn-style.css">
+  <link rel="shortcut icon" href="./public/logo-sin-fondo.png" type="image/x-icon">
 
   <title>Tu tienda de PC</title>
 </head>
 <header id="general-header" class="general-header">
-  <nav>
-    <ul class="nav-header">
-      <li>Inicio</li>
-      <li>Contacto</li>
-      <li>Login</li>
+  <nav class="navbar">
+
+        
+    <label for="chkToggle" class="navbar-toggle" id="js-navbar-toggle"><img src="./public/toggle-navbar-sin-fondo.png" alt=""></label>
+    <a href="#" class="logo">Tu tienda de informatica </a>
+    <input type="checkbox" id="chkToggle">
+
+    <ul class="main-nav" id="js-navbar-toggle">
+        <li><a href="#" class="nav-links">Inicio </a></li>
+        <li><a href="#" class="nav-links">Compras</a></li>
+        <li><a href="#" class="nav-links">Contacto</a></li>
+        <li><a href="#" class="nav-links">Registrarte</a></li>
     </ul>
+
   </nav>
+
+
+   
+  
 </header>
 
 <body>
   <section class="filters">
-    <select  id="sellerFilter" class="sellerFilter" >
+    <select id="sellerFilter" class="sellerFilter">
       <option value="All">Todas las marcas</option>
       <option value="APPLE">APPLE</option>
       <option value="ASUS">ASUS</option>
@@ -30,7 +44,7 @@
       <option value="MSI">MSI</option>
       <option value="LENOVO">LENOVO</option>
     </select>
-    
+
     <input type="text" id="nameFilter" placeholder="marca" />
     <input type="number" id="priceFilter" placeholder="Precio máximo" />
     <button id="priceBtn">Buscar por precio</button>
@@ -39,14 +53,25 @@
 
   <div id="main-container">
     <h1 class="Titulo-main">
-      Todos los portatiles 
+      Todos los portatiles
     </h1>
   </div>
   <div id="productos">
 
   </div>
+
+  <footer id="redes-sociales" class="footer-redes">
+    
+    <button class="infoRedes"> 📩 Mail</button>
+    <button class="infoRedes">Instagram</button>
+    <button class="infoRedes">Discord</button>
+    <button class="infoRedes">Github</button>
   
-  
+  </footer>
+
+   
+
+
   <!-- <script>
       alert('Todos los ordenadores tienen la posibilidad de darte un chuchaso!');
     </script> -->

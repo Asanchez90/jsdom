@@ -66,7 +66,7 @@ export const PORTATILES = [
       reviews: 200,
       seller: 'MSI',
       image:
-        './public/msi-katana-intel-core-i7-12650.png',
+        'https://res.cloudinary.com/dcs7ntcz7/image/upload/v1685363099/Tienda-web/msi-katana-intel-core-i7-12650_irlm4s.png',
     },
     {
       name: 'MSI Crosshair 17 C12VF-264XES Intel Core i7-12650H/32GB/1TB SSD/RTX 4060/17.3"',
