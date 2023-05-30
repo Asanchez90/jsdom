@@ -197,21 +197,36 @@ const filtroPortatilesPorPrecio = (PORTATILES, maxPrice) => {
 
   // console.log(filterPORTATILES);
 
+
   pintarProductos(filterPORTATILES);
 };
+
 
 const filterByPriceBtn = document.querySelector("#priceBtn");
 filterByPriceBtn.addEventListener("click", () => {
   const priceFilter = document.querySelector("#priceFilter");
   const maxPrice = priceFilter.value;
-  
 
-  // filtroPortatilesPorPrecio(PORTATILES, maxPrice);
-  filtroPortatilesPorPrecio(PORTATILES,maxPrice);
+  if (maxPrice === "" ) {
+    const errorText = document.querySelector("#errorText");
+    errorText.textContent = alert ("Debes insertar una cantidad");
+   
+    return; 
+  // } else {
+  //   (maxPrice < 6000) 
+  //     const errorText = document.querySelector("#errorText");
+  //   errorText.textContent = alert ("Debes insertar una cantidad menor");
+    
+  //   return
+  }
+
+  filtroPortatilesPorPrecio(PORTATILES, maxPrice);
 });
 
 
-// resetear filtros con el boton de "limpiar filtros"
+
+
+
 
 
 const cleanFiltersBtn = document.querySelector("#cleanFiltersBtn");

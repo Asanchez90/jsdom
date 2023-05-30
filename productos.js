@@ -1,7 +1,7 @@
 export const PORTATILES = [
   
     {
-      name: 'MacBook Air chip M2',
+      name: ' Apple MacBook Air chip M2',
       so: 'ios',
       price: 1199,
       stars: 5,
@@ -10,7 +10,7 @@ export const PORTATILES = [
       image: 'https://res.cloudinary.com/dcs7ntcz7/image/upload/v1685363098/Tienda-web/mac-m2_qrirqc.png',
     },
     {
-      name: 'MacBook Pro 14" chip M2 Pro or M2 Max chip',
+      name: ' Apple MacBook Pro 14" chip M2 Pro or M2 Max chip',
       so: 'ios',
       price: 1999,
       stars: 4,
