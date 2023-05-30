@@ -225,6 +225,9 @@ const resetFilters = () => {
 
   const priceFilter = document.querySelector("#priceFilter");
   priceFilter.value = "";
+  
+  const filterPORTATILES = document.querySelector("#nameFilter");
+  filterPORTATILES.value = "";
 
   pintarProductos(PORTATILES);
 };
