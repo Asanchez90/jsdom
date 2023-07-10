@@ -257,5 +257,3 @@ const resetFilters = () => {
 //   console.log('Button clicked!');
 // };
 
-// const buttonElement = document.querySelector('#cleanFiltersBtn');
-// buttonElement.addEventListener('click', onButtonClicked);
